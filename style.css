@@ -1,0 +1,98 @@
+/* Custom properties */
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --green: #93D82D;
+    --dark-grey: #282828;
+    --grey: #808080;
+    --light-grey: #A3A3A3;
+    --dark-blue: #141922;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Generics */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+  }
+
+  aside {
+    background-color: var(--black);
+    width: 10vw;
+    height: calc(100vh - 160px);
+  }
+
+  main {
+    background-color: blue;
+    width: 90vw;
+    height: calc(100vh - 160px);
+  }
+
+  header {
+    background-color: rgba(0,0,0,0.5);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 90vw;
+    z-index: 1;
+  }
+
+  footer {
+    background-color: red;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  /* Utils */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  /* Main */
+
+  .main-content {
+    padding: 80px 0;
+    overflow-y: auto;
+    height: calc(100vh - 80px);
+  }
+
+  
+
+
+
+
+
+
+
+
+
+  /************ RESPONSIVE ************/
+
+  /* !Responsive Layout xs - 576px */
+
+  /* !Responsive Layout xs - 768px */
+
+  /* !Responsive Layout xs - 992px */
+
+  /* !Responsive Layout xs - 1200px */
+
+  /* !Responsive Height - 350px */
+  
+
+
+
+
