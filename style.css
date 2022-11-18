@@ -66,23 +66,42 @@
   }
 
   .row {
-
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
   }
 
   .column {
-
+    flex-basis: 50%;
+    padding: 5px;
   }
 
   .card {
     min-height: 200px;
+    background-color: yellow;
+  }
+
+  .section {
+    margin-top: 20px;
   }
 
 
   /* Main */
+  
+  /* Main content */
   .main-content {
     padding: 80px 10px;
     overflow-y: auto;
     height: calc(100vh - 80px);
+  }
+
+  /* Navbar */
+  .card-title {
+    background-color: green;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   
@@ -115,18 +134,22 @@
         width: calc(100% - 200px);
       }
 
-      
+
   }
 
 
   /* !Responsive Layout xs - 992px */
   @media screen and (min-width: 992px){
-    
+    .column {
+        flex-basis: 25%;
+      }
   }
 
   /* !Responsive Layout xs - 1200px */
   @media screen and (min-width: 1200px){
-    
+    .column {
+        flex-basis: calc(100% / 6);
+      }
   }
 
   /* !Responsive Height - 350px */
