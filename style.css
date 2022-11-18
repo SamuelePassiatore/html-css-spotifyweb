@@ -93,8 +93,23 @@
   }
 
 
-  /* Main */
+  /* Top part */
   
+  /* Sidebar */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .sidebar ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   /* Main content */
   .main-content {
     padding: 80px 10px;
@@ -110,6 +125,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     overflow: hidden;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
   }
 
   /* Footer */
@@ -161,6 +180,10 @@
     
     .footer-center {
         flex-basis: 60%;
+    }
+    
+    .sidebar ul{
+        align-items: flex-start;
     }
     
   }
