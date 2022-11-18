@@ -24,13 +24,13 @@
 
   aside {
     background-color: var(--black);
-    width: 10vw;
+    width: 70px;
     height: calc(100vh - 160px);
   }
 
   main {
     background-color: blue;
-    width: 90vw;
+    width: calc(100% - 70px);
     height: calc(100vh - 160px);
   }
 
@@ -39,7 +39,7 @@
     height: 80px;
     position: fixed;
     top: 0;
-    width: 90vw;
+    width: calc(100% - 70px);
     z-index: 1;
   }
 
@@ -52,20 +52,35 @@
     z-index: 1;
   }
 
-  /* Utils */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  ul {
+    list-style-type: none;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  /* Utils */
   .flex {
     display: flex;
   }
 
-  /* Main */
+  .row {
 
+  }
+
+  .column {
+
+  }
+
+  .card {
+    min-height: 200px;
+  }
+
+
+  /* Main */
   .main-content {
-    padding: 80px 0;
+    padding: 80px 10px;
     overflow-y: auto;
     height: calc(100vh - 80px);
   }
@@ -83,12 +98,36 @@
   /************ RESPONSIVE ************/
 
   /* !Responsive Layout xs - 576px */
+  
 
   /* !Responsive Layout xs - 768px */
+  @media screen and (min-width: 768px){
+  
+    aside {
+        width: 200px;
+      }
+    
+      main {
+        width: calc(100% - 200px);
+      }
+    
+      header {
+        width: calc(100% - 200px);
+      }
+
+      
+  }
+
 
   /* !Responsive Layout xs - 992px */
+  @media screen and (min-width: 992px){
+    
+  }
 
   /* !Responsive Layout xs - 1200px */
+  @media screen and (min-width: 1200px){
+    
+  }
 
   /* !Responsive Height - 350px */
   
