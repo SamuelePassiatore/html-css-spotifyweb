@@ -167,6 +167,7 @@
     position: relative;
     right: 1px;
   }
+
   
   /* Main */
 
@@ -203,7 +204,7 @@
   .navbar li a {
     color: var(--light-grey);
   }
-
+  
   .navbar .line-yellow-navbar {
     border-bottom: 2px solid var(--green);
     width: 27px;
@@ -240,6 +241,13 @@
     font-weight: bold;
   }
 
+  #popular-artist .card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
 
 
   /* Footer */
@@ -259,7 +267,7 @@
     margin-left: 10px;
   }
 
-  .footer-left ul {
+  .footer-left ul, span {
     padding-left: 10px;
     padding-right: 15px;
     font-size: 11px;
@@ -342,6 +350,23 @@
     border-radius: 2px;
   }
 
+
+  /************ HOVER ************/
+
+  .navbar li:hover a {
+    color: var(--white);
+  }
+
+  .sidebar li:hover * {
+    color: var(--white);
+  }
+
+  .sidebar li:hover span {
+    cursor: pointer;
+  }
+
+
+  
 
 
 
@@ -449,7 +474,12 @@
     .sidebar-top .line-yellow-sidebar {
       border-left: 3px solid var(--green);
       position: relative;
-      left: -14px;
+      left: -12px;
+    }
+
+    .sidebar-top li.move-left {
+      position: relative;
+      right: 3px;
     }
 
     .navbar .line-yellow-navbar {
@@ -464,6 +494,18 @@
     #recently-played .card-title span {
       padding: 10px 10px;
       line-height: 20px;
+    }
+
+    .footer-left-text > ul {
+      display: flex;
+    }
+
+    .footer-left-text li {
+      padding-right: 2px;
+    }
+
+    .footer-left .icons {
+      padding-top: 5px;
     }
 
     .footer-center .icons-center-over {
@@ -564,7 +606,7 @@
 }
 
   /* !Responsive Height - 350px */
-  @media screen and (max-height: 350px) {
+  @media screen and (min-height: 350px) {
     
 
 
