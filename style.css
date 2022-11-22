@@ -26,13 +26,13 @@
   aside {
     background-color: var(--black);
     width: 70px;
-    height: calc(100vh - 80px);
+    height: 100%;
   }
 
   main {
     background-color: var(--dark-blue);
     width: calc(100% - 70px);
-    height: calc(100vh - 80px);
+    height: 100%;
   }
 
   header {
@@ -48,7 +48,7 @@
   }
 
   footer {
-    background-color: red;
+    background-color: var(--dark-grey);
     height: 80px;
   }
 
@@ -125,7 +125,7 @@
   .sidebar {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100vh - 80px);
     justify-content: space-between;
   }
 
@@ -245,21 +245,102 @@
   /* Footer */
   .footer-left, .footer-right {
     display: flex;
+    align-items: center;
     flex-basis: 30%;
-    background-color: orange;
   }
 
   .footer-center {
     flex-basis: 40%;
-    background-color: greenyellow;
   }
 
+  .footer-left img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+  }
 
-  
+  .footer-left ul {
+    padding-left: 10px;
+    padding-right: 15px;
+    font-size: 11px;
+    color: var(--light-grey);
+  }
 
+  .footer-left .name-song {
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--white);
+  }
 
+  .footer-left .icons {
+    font-size: 13px;
+  }
 
+  .footer-right .icons {
+    color: var(--white);
+  }
 
+  .footer-right .icons li {
+    padding: 0 5px;
+  }
+
+  .footer-center .forward-rotate {
+    transform: rotate(180deg);
+  }
+
+  .footer-center ul {
+    flex-basis: 100%;
+    align-items: center;
+  }
+
+  .footer-center .icons-center-over li{
+    padding: 0 15px;
+  }
+
+  .footer-center ul.icons-center-over {
+    padding: 8px 15px;
+  }
+
+  footer .progress-bar {
+    background-color: var(--grey);
+    height: 4px;
+    width: 60%;
+    border-radius: 2px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .footer-center ul.icons-center-under {
+    padding: 0 25px;
+    padding-bottom: 10px;
+  }
+
+  .footer-center .icons-center-under {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .footer-right ul {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-right .progress-bar {
+    width: 100%;
+  }
+
+  .footer-right .div-progress-bar {
+    padding-right: 10px;
+  }
+
+  .progress-bar-value {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: var(--light-light-grey);
+    border-radius: 2px;
+  }
 
 
 
@@ -282,11 +363,11 @@
     }
     
     .footer-left, .footer-right {
-      flex-basis: 20%;
+      flex-basis: 30%;
     }
     
     .footer-center {
-      flex-basis: 60%;
+      flex-basis: 40%;
     }
     
     .sidebar ul{
@@ -385,8 +466,20 @@
       line-height: 20px;
     }
 
+    .footer-center .icons-center-over {
+      justify-content: center;
+    }
 
-  }
+    .footer-right ul.icons {
+      justify-content: flex-end;
+      padding-right: 5px;
+    }
+
+    .footer-center ul.icons-center-under {
+      padding: 0 45px;
+    }
+
+    }
 
 
   /* !Responsive Layout xs - 992px */
@@ -399,7 +492,6 @@
       padding: 0 80px;
     }
 
-    
     .navbar .line-yellow-navbar {
       position: relative;
       left: 150px;
@@ -409,6 +501,19 @@
       padding: 0 20px;
     }
 
+    .footer-left ul.icons {
+      display: flex;
+    }
+
+    .footer-left ul.icons li {
+      padding: 0 5px;
+    }
+
+    .footer-center ul.icons-center-under {
+      padding: 0 0;
+    }
+
+  
   }
 
   /* !Responsive Layout xs - 1200px */
@@ -449,6 +554,10 @@
       padding: 5px 0;
     }
 
+    .footer-center ul.icons-center-under {
+      padding: 0 90px;
+    }
+
 
 
 
@@ -456,14 +565,13 @@
 
   /* !Responsive Height - 350px */
   @media screen and (max-height: 350px) {
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
+    
+
+
+
   }
     
-  }
+  
 
 
 
